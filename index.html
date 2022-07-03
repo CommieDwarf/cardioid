@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardioid</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="left-panel">
+        <div id="info">
+          <h1>Cardioid</h1>
+          <p>
+            Program na zaliczenie grafiki komputerowej <br />
+            Autor: <strong>Konrad Czaczkowski </strong><br />
+            II Rok Informatyki Stosowanej, WSE
+          </h3>
+        </div>
+        <div id="sliders">
+            Radius <input id="radius" type="range" min="0" max="80" value="50" />
+            <span id="radiusLabel">50</span><br />
+            Shift X<input id="shiftX" type="range" min="0" max="800" value="400" />
+            <span id="shiftXLabel">400</span><br />
+            Shift Y<input id="shiftY" type="range" min="0" max="400" value="200" />
+            <span id="shiftYLabel">200</span><br />
+            Line Width<input
+              id="lineWidth"
+              type="range"
+              min="0.05"
+              max="2"
+              step="0.05"
+              value="0.1"
+            />
+            <span id="lineWidthLabel">0.1</span>
+          </div>
+      </div>
+      <canvas id="canvas" width=800" height="500"></canvas>
+      
+    </div>
+  </body>
+</html>
